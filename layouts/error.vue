@@ -1,6 +1,6 @@
 <template>
-  <v-app dark>
-    <h1 v-if="error.statusCode === 404">
+  <v-app dark justify="center" align="center">
+    <h1 class="mt-10" v-if="error.statusCode === 404">
       {{ pageNotFound }}
     </h1>
     <h1 v-else>

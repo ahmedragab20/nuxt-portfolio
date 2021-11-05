@@ -88,7 +88,7 @@
 export default {
   data() {
     return {
-      drawer: false,
+      drawer: true,
       fixed: false,
       clipped: false,
       miniVariant: false,
