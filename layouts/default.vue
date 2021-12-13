@@ -30,24 +30,19 @@
       </v-btn>
       <v-spacer />
       <v-btn fab x-small>
-        <v-img
-          src="https://scontent.fcai20-3.fna.fbcdn.net/v/t1.6435-9/250896130_268140081905482_6565534344556685289_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHjPk8ImlGm0WUWnga_xCSsvqtH4_Plgr--q0fj8-WCv8nUrqoiaVtloSMnv7m-n2TbSHEOfS9_Eb4mD6ktS093&_nc_ohc=XgtEwc1GbGkAX-KvrMt&_nc_ht=scontent.fcai20-3.fna&oh=bd232fbdca1a1ad100eadfd02c65d333&oe=61AB3C37"
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C4D03AQEbJq620Yp_BQ/profile-displayphoto-shrink_800_800/0/1635271227369?e=1645056000&v=beta&t=HHdTeq-4IV2rcmt0v_vxAVqESFSxzT5MOtauK8_8D0k"
           width="30"
           class="rounded-circle elevation-5"
           @click="acountList = !acountList"
-        ></v-img>
+        />
       </v-btn>
     </v-app-bar>
 
     <transition name="accounts-list">
       <div class="accounts-list" v-if="acountList">
         <v-card max-width="250" class="mx-auto">
-          <v-img
-            src="https://scontent.fcai20-3.fna.fbcdn.net/v/t1.6435-9/250896130_268140081905482_6565534344556685289_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHjPk8ImlGm0WUWnga_xCSsvqtH4_Plgr--q0fj8-WCv8nUrqoiaVtloSMnv7m-n2TbSHEOfS9_Eb4mD6ktS093&_nc_ohc=XgtEwc1GbGkAX-KvrMt&_nc_ht=scontent.fcai20-3.fna&oh=bd232fbdca1a1ad100eadfd02c65d333&oe=61AB3C37"
-            height="150px"
-            dark
-          >
-          </v-img>
+          <img src="@/assets/me.jpg" height="150px" dark />
 
           <v-list dense nav>
             <v-list-item

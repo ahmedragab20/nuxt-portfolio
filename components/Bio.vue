@@ -10,14 +10,12 @@
     ></v-slider>
 
     <div class="image overflow-hidden elevation-20 rounded-circle">
-      <v-img
+      <img
         :aspect-ratio="4 / 4"
         :width="width"
-        max-width="400"
-        max-height="400"
         class="rounded-circle"
-        src="https://scontent.fcai20-3.fna.fbcdn.net/v/t1.6435-9/250896130_268140081905482_6565534344556685289_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHjPk8ImlGm0WUWnga_xCSsvqtH4_Plgr--q0fj8-WCv8nUrqoiaVtloSMnv7m-n2TbSHEOfS9_Eb4mD6ktS093&_nc_ohc=XgtEwc1GbGkAX-KvrMt&_nc_ht=scontent.fcai20-3.fna&oh=bd232fbdca1a1ad100eadfd02c65d333&oe=61AB3C37"
-      ></v-img>
+        src="https://media-exp1.licdn.com/dms/image/C4D03AQEbJq620Yp_BQ/profile-displayphoto-shrink_800_800/0/1635271227369?e=1645056000&v=beta&t=HHdTeq-4IV2rcmt0v_vxAVqESFSxzT5MOtauK8_8D0k"
+      />
     </div>
     <h5 class="mt-7 text-center grey--text accent-4 body-2">
       Hello, I'm Ahmed Ragab working as a Front-end web Developer with a year of
@@ -32,10 +30,16 @@
 export default {
   data() {
     return {
-      width: 200,
+      width: 100,
     }
   },
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.image {
+  img {
+    object-fit: cover;
+  }
+}
+</style>
