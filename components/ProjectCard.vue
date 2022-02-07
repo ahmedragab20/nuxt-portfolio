@@ -1,8 +1,8 @@
 <template>
   <div class="project-card">
     <v-container>
-      <v-card class="mx-auto" max-width="400" elevation="10" shaped>
-        <v-img height="200px" :src="item.img"> </v-img>
+      <v-card class="mx-auto" max-width="400" outlined>
+        <v-img height="200px" :src="item.img" class="elevation-5"> </v-img>
 
         <div
           class="v-text d-flex justify-start align-start flex-column px-4 py-2"

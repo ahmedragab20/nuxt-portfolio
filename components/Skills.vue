@@ -2,20 +2,20 @@
   <div class="skills">
     <v-container>
       <v-row justify="center" align="center">
-          <v-flex xs6 md4 lg3 v-for="item in skills" :key="item.id">
-            <v-card
-              max-width="200px"
-              min-height="275px"
-              class="mx-auto skill-card ma-5"
-              shaped
-            >
-              <v-img :src="item.img" class="ma-2"></v-img>
+        <v-flex xs6 md3 lg2 v-for="item in skills" :key="item.id">
+          <v-card
+            max-width="200px"
+            min-height="220px"
+            class="ma-4 skill-card"
+            outlined
+          >
+            <v-img :src="item.img" class="ma-2"></v-img>
 
-              <v-card-actions class="skill-title">
-                <v-card-title v-text="item.name"></v-card-title>
-              </v-card-actions>
-            </v-card>
-          </v-flex>
+            <v-card-actions class="skill-title">
+              <v-card-title v-text="item.name"></v-card-title>
+            </v-card-actions>
+          </v-card>
+        </v-flex>
       </v-row>
     </v-container>
   </div>

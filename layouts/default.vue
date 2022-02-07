@@ -4,9 +4,10 @@
       v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
+      temporary
       app
     >
-      <v-list shaped>
+      <v-list>
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -31,7 +32,7 @@
       <v-spacer />
       <v-btn fab x-small>
         <v-img
-          src="https://scontent.fcai20-3.fna.fbcdn.net/v/t1.6435-9/250896130_268140081905482_6565534344556685289_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHjPk8ImlGm0WUWnga_xCSsvqtH4_Plgr--q0fj8-WCv8nUrqoiaVtloSMnv7m-n2TbSHEOfS9_Eb4mD6ktS093&_nc_ohc=XgtEwc1GbGkAX-KvrMt&_nc_ht=scontent.fcai20-3.fna&oh=bd232fbdca1a1ad100eadfd02c65d333&oe=61AB3C37"
+          :src="img"
           width="30"
           class="rounded-circle elevation-5"
           @click="acountList = !acountList"
@@ -42,12 +43,7 @@
     <transition name="accounts-list">
       <div class="accounts-list" v-if="acountList">
         <v-card max-width="250" class="mx-auto">
-          <v-img
-            src="https://scontent.fcai20-3.fna.fbcdn.net/v/t1.6435-9/250896130_268140081905482_6565534344556685289_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHjPk8ImlGm0WUWnga_xCSsvqtH4_Plgr--q0fj8-WCv8nUrqoiaVtloSMnv7m-n2TbSHEOfS9_Eb4mD6ktS093&_nc_ohc=XgtEwc1GbGkAX-KvrMt&_nc_ht=scontent.fcai20-3.fna&oh=bd232fbdca1a1ad100eadfd02c65d333&oe=61AB3C37"
-            height="150px"
-            dark
-          >
-          </v-img>
+          <v-img :src="img" height="150px" dark> </v-img>
 
           <v-list dense nav>
             <v-list-item
@@ -78,7 +74,7 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer :absolute="!fixed" app>
+    <v-footer absolute app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -123,6 +119,7 @@ export default {
           to: 'https://www.linkedin.com/in/ahmed-ragab-bb75541b3/',
         },
       ],
+      img: require('@/assets/me.jpg'),
     }
   },
   methods: {
