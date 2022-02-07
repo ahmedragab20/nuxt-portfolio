@@ -30,11 +30,11 @@
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
       <v-spacer />
-      <v-btn fab x-small>
+      <v-btn fab depressed x-small>
         <v-img
           :src="img"
           width="30"
-          class="rounded-circle elevation-5"
+          class="rounded-circle"
           @click="acountList = !acountList"
         ></v-img>
       </v-btn>
