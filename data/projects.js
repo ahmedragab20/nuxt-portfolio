@@ -1,5 +1,12 @@
 const projects = [
   {
+    id: 2334,
+    name: 'Z store',
+    used: 'Nuxt.js, Vuetify.js, Vuex',
+    img: 'https://mostaql.hsoubcdn.com/uploads/thumbnails/809326/6203b0ab9566a/zstore.jpg',
+    url: 'http://elzabit.softgatesdemo.com/',
+  },
+  {
     id: 4534,
     name: 'VueTv',
     used: 'Vue.js 3, Bootstrap, Vuex',
