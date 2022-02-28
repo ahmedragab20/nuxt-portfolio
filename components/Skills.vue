@@ -9,11 +9,19 @@
             class="ma-4 skill-card"
             outlined
           >
-            <v-img :src="item.img" class="ma-2"></v-img>
+            <div class="pa-2">
+              <v-img
+                :src="item.img"
+                contain
+                height="160"
+                class="rounded"
+              ></v-img>
+            </div>
 
-            <v-card-actions class="skill-title">
-              <v-card-title v-text="item.name"></v-card-title>
-            </v-card-actions>
+            <v-card-title
+              v-text="item.name"
+              class="grey lighten-4"
+            ></v-card-title>
           </v-card>
         </v-flex>
       </v-row>
@@ -33,8 +41,7 @@ export default {
 </script>
 
 <style scoped>
-.skill-card {
-  padding: 5px;
+/* .skill-card {
   position: relative !important;
 }
 .skill-card .v-card__title {
@@ -59,5 +66,5 @@ export default {
   .v-card__title {
     font-size: 0.75rem !important;
   }
-}
+} */
 </style>

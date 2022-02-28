@@ -1,25 +1,25 @@
 const projects = [
-  {
-    id: 2334,
-    name: 'Z store',
-    used: 'Nuxt.js, Vuetify.js, Vuex',
-    img: 'https://mostaql.hsoubcdn.com/uploads/thumbnails/809326/6203b0ab9566a/zstore.jpg',
-    url: 'http://elzabit.softgatesdemo.com/',
-  },
+  // {
+  //   id: 2334,
+  //   name: 'Z store',
+  //   used: 'Nuxt.js, Vuetify.js, Vuex',
+  //   img: 'https://mostaql.hsoubcdn.com/uploads/thumbnails/809326/6203b0ab9566a/zstore.jpg',
+  //   url: 'http://elzabit.softgatesdemo.com/',
+  // },
   {
     id: 4534,
     name: 'VueTv',
     used: 'Vue.js 3, Bootstrap, Vuex',
-    img: 'https://cdn.vox-cdn.com/thumbor/-_58CyCjSLS36byYJ3jyjvy4Akg=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/9871033/Movies_end_of_year_2017.jpg',
+    img: 'https://chrisreedfilm.files.wordpress.com/2019/12/reed-top-2019-top-films.jpg',
     url: 'https://vue-ar-tv.netlify.app/',
   },
-  // {
-  //   id: 1,
-  //   name: 'iPhone 12 pro',
-  //   used: 'Vue.js, Bootstrap, Sass, Gsap',
-  //   img: 'https://www.apple.com/v/iphone-13/d/images/overview/cameragallery/memories_hw_static__cusdx5rolvgy_large.jpg',
-  //   url: 'https://ahmedragab20.github.io/iphone12pro/',
-  // },
+  {
+    id: 1,
+    name: 'iPhone 12 pro',
+    used: 'Vue.js, Bootstrap, Sass, Gsap',
+    img: 'https://www.apple.com/v/iphone-13/d/images/overview/cameragallery/memories_hw_static__cusdx5rolvgy_large.jpg',
+    url: 'https://ahmedragab20.github.io/iphone12pro/',
+  },
   {
     id: 2,
     name: 'ARTV',
