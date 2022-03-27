@@ -18,7 +18,7 @@
       ></v-img>
     </div>
     <h5 class="mt-7 text-center grey--text accent-4 body-2">
-      Hello, I'm Ahmed Ragab working as a Front-end web Developer with a year of
+      Hi, I'm Ahmed Ragab working as a Front-end web Developer with a year of
       experience. I've worked on more than 25 projects using Vue.js, Nuxt.js,
       and some other different technologies; you can try some of them from
       <nuxt-link to="/projects" class="grey--text">here</nuxt-link>.
@@ -32,7 +32,6 @@ export default {
     return {
       width: 200,
       img: require('@/assets/me.jpg'),
-
       width: 100,
     }
   },

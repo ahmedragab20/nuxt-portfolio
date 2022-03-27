@@ -17,10 +17,9 @@
                 class="rounded"
               ></v-img>
             </div>
-
             <v-card-title
               v-text="item.name"
-              class="grey lighten-4"
+              :class="isDark ? 'grey darken-4' : 'grey lighten-4'"
             ></v-card-title>
           </v-card>
         </v-flex>
@@ -37,34 +36,10 @@ export default {
       skills,
     }
   },
+  computed: {
+    isDark() {
+      return this.$vuetify.theme.dark
+    },
+  },
 }
 </script>
-
-<style scoped>
-/* .skill-card {
-  position: relative !important;
-}
-.skill-card .v-card__title {
-  position: absolute !important;
-  bottom: 0 !important;
-}
-@media (max-width: 480px) {
-  .skill-card {
-    max-width: 150px !important;
-    min-height: 220px !important;
-  }
-  .v-card__title {
-    font-size: 1rem !important;
-    padding: 0 !important;
-  }
-}
-@media (max-width: 320px) {
-  .skill-card {
-    max-width: 110px !important;
-    min-height: 155px !important;
-  }
-  .v-card__title {
-    font-size: 0.75rem !important;
-  }
-} */
-</style>
